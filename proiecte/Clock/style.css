@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: navy;
+}
+
+#Digi {
+    margin: 30px auto;
+    max-width: 500px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 50px;
+    padding: 30px;
+    box-shadow: 1px 5px rgba(0, 0, 0, 0.471);
+}
+
+.clock {
+    padding: 30px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    box-shadow: 5px 5px rgba(0, 119, 255, 0.403) ;
+    font-size: 2rem;
+}
+
+.data {
+    padding: 30px;
+    font-size: 2rem;
+    margin: 20px auto;
+}
+
+select {
+    border-radius: 30px;
+    font-size: large;
+}
+
+button {
+    border-radius: 30px;
+    size: large;
+
+}

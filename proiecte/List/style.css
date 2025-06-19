@@ -1,0 +1,40 @@
+body {
+    background-color:   rgb(25,25,25) ;
+    text-align: center;
+}
+input {
+    border-radius: 15px;
+    border: 20px;
+    background-color: black;
+    color: white;
+}
+
+button {
+    border-radius: 15px;
+    background-color: rgb(60,60,60);
+    color: white;
+    border: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(70,70,70);
+    transition: 0.65s;
+}
+#box p {
+    color: white;
+    background-color: rgb(40,40,40);
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#box p:hover {
+    cursor: pointer;
+    background-color: rgb(50,50,50);
+    transition: 0.7s;
+}
+
+.complete {
+    background-color: rgb(200,200,200);
+    text-decoration: line-through;
+    transition: 0.7;
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(241, 184, 50);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.box {
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+    border-radius: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}

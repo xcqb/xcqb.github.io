@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+
+h1 {
+    font-family: "Monoton";
+    font-size: 70px;
+    margin: 10px;
+}
+
+h2 {
+    margin: 15px 0 5px 0;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+
+input[type=number] {
+    width: 60px;
+}

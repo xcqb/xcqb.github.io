@@ -1,0 +1,21 @@
+canvas {
+    border: 1px solid rgb(25,25,25);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7vh;
+}
+
+#reset {
+    background-color: red;
+    color: white;
+    margin-right: 10px;
+    border: 10px;
+    border-radius: 5px;
+    width: 6vh;
+    height: 4vh;
+    cursor: pointer;
+}

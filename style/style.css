@@ -1,0 +1,346 @@
+/* Meniu */
+* {
+    font-family: -apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;  
+}
+
+#topbar {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 15px 5px rgb(75,75,75);   
+    position: fixed;
+    opacity: 0.99;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.dark-mode #topbar {
+    box-shadow: 0 0 15px 5px rgb(164, 164, 164); 
+}
+
+#topbar li{
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+#topbar .nav-link {
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    display: inline-flex;
+}
+
+.dark-mode #topbar .nav-link {
+    color: rgb(200, 200, 200);
+}
+
+#topbar li:hover .nav-link{
+    transform: translateY(-3px);
+    transition: 0.75s all;
+}
+
+#themechanger {
+    border: 0;
+    stroke: rgb(0,0,0);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: 0.25s;
+    border-radius: 50%;
+    background-image: url("../img/eclipse.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 200vh;
+    margin-bottom: 5px;
+    z-index: 2;
+    position: fixed;
+}
+
+.dark-mode #themechanger {
+    stroke: rgb(255,255,255);
+}
+
+#themechanger:hover {
+    color: rgb(125,125,125);
+    transform: rotate(180deg);
+    transition: 0.25s all;
+}
+
+.hero-section {
+    background: linear-gradient(180deg,rgba(35, 35, 35, 0.252), rgba(200, 200, 200, 0.258)), url("https://picsum.photos/1600/900");
+    height: calc(100vh - 54.2px);
+    width: 97.2%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50vh;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.5rem;
+    text-shadow: 0px 0px 2px rgb(40,40,40);
+    color: white;
+    position: relative;
+}
+
+footer {
+    background: linear-gradient(90deg,rgba(100, 218, 64, 0.635),rgba(230, 232, 68, 0.635),rgba(65, 113, 204,0.635));
+    color: rgb(70,70,70);
+    text-align: center;
+    justify-self: center;
+    width: calc(100% - 5vh);
+    height: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.hero-section h1,.hero-section p,.hero-section h2,.hero-section footer {
+    z-index: 0;
+}
+
+.text-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.dark-mode {
+    background-color: rgb(40,40,40);
+    color: white;
+}
+
+.dark-mode .text-content {
+    background-color: rgb(40,40,40);
+    color: white;
+    box-shadow: 0 0 15px 5px rgb(49, 49, 49); 
+    border-radius: 20px;
+}
+
+.text-content .text {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.text-content img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.cards-content {
+    padding: 50px 30px;
+}
+
+.cards-content h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.cards-list {
+    display: grid;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-gap: 1rem;
+    padding: 0;
+}
+
+.cards-list li {
+    padding: 0;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+}
+
+.card img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.card .card-text button,.classbtntest {
+    border: 0px;
+    background-color: rgb(70,70,70);
+    color: rgb(255,255,255);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s linear;
+    line-height: 48px;
+}       
+
+.card .card-text button:hover,.classbtntest:hover {
+    transform: translateY(-6px);
+    transition: all 0.5s linear;
+}
+
+.catalog {
+    padding: 50px 30px;
+}
+
+.catalog form {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.catalog form input {
+    min-width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 30px;
+    border: none;
+}
+
+.catalog form button {
+    margin-left: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: rgb(30,30,30);
+    color: rgb(200,200, 200);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.catalog form button:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.catalog form button svg {
+    margin-left: 5px;
+}
+
+iframe {
+    height: 500px;
+    width: 90%;
+    border-radius: 5px;
+    margin: 100px 10vh;
+}
+
+.contact {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact form div {
+    padding: 20px;
+    justify-self: center;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    display: flex;
+}
+
+.contact form div svg {
+    margin-right: 10px;
+    fill: rgb(70,70,70);
+}
+
+.contact form div input,
+.contact form div textarea {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+}
+
+.contact form div input:focus,
+.contact form div textarea:focus {
+    outline: none;
+} 
+
+.contact form button {
+    background-color: rgb(120,120,120);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.25s;
+}
+
+.contact form button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: 0.25s;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero-section h1, .hero-section h2 {
+        font-size: 1em;
+        padding-right: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.4em;
+    }
+
+    .text-content {
+        display: block;
+    }
+
+    .text-content .text, .text-content .img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .cards-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .cards-list {
+        grid-template-columns: repeat(3,1fr);
+    }
+}

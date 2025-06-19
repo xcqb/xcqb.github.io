@@ -1,0 +1,90 @@
+button {
+    cursor:pointer;
+    border-radius: 5px;
+    border: 50px;
+}   
+
+#red {
+    background-color: red;width: 140px;height: 140px;
+}
+#blue {
+    background-color: blue;width: 140px;height: 140px;
+}
+#yellow{
+    background-color: yellow;width: 140px;height: 140px;
+}
+#green {
+    background-color: rgb(0, 255, 55);width: 140px;height: 140px;
+} 
+#purple {
+    background-color: purple;width: 140px;height: 140px;
+}
+#orange {
+    background-color: orange;width: 140px;height: 140px;
+} 
+#pink {
+    background-color: pink;width: 140px;height: 140px;
+}
+#cyan {
+    background-color: cyan;width: 140px;height: 140px;
+} 
+#brown {
+    background-color: brown;width: 140px;height: 140px;
+} 
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#start {
+    color: white;
+    background-color: green;
+    font-size:large;
+}
+
+#boxd {
+    display: flex;
+    width: 450px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    width: 140px;
+    height: 140px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 50px;
+    transition: 0.3s;
+    opacity: 0.2;
+}
+
+.btn.active {
+    opacity: 1;
+}
+
+#start {
+    margin: 20px;
+    padding: 20px;
+}
+
+#score{
+    font-size: 19px;
+}
+
+#highscore {
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#titlu {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#score, #highscore,#titlu,button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

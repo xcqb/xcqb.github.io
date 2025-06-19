@@ -1,0 +1,40 @@
+{
+    "proiecte": [
+        {
+            "name": "Pixel Art",
+            "desc": "Color squares in any color you want! ",
+            "img": "./img/pixel_art.png",
+            "url": "Pixel"
+        },
+        {
+            "name": "Digital Clock",
+            "desc": "See your clock exactly with no delays!",
+            "img": "./img/digital_clock.png",
+            "url": "Clock"
+        },
+        {
+            "name": "Story Generator",
+            "desc": "Generate a random story!",
+            "img": "./img/story_gen.png",
+            "url": "Story"
+        },
+        {
+            "name": "Darius Says",
+            "desc": "Simon Says but its Darius.. credits for him being a pro friend",
+            "img": "./img/darius_spune.png",
+            "url": "Durias"
+        },
+        {
+            "name": "To-Do List",
+            "desc": "Make a list of what u need!",
+            "img": "./img/Todo.png",
+            "url": "List"
+        },
+        {
+            "name": "Draw Canvas",
+            "desc": "Draw whatever u want!",
+            "img": "./img/draw.png",
+            "url": "Canvas"
+        }
+    ]
+}
